@@ -1,0 +1,96 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+
+\usepackage[
+  a4paper, mag=1000, includefoot,
+  left=1.1cm, right=1.1cm, top=1.2cm, bottom=1.2cm, headsep=0.8cm, footskip=0.8cm
+]{geometry}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{times}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+
+\IfFileExists{pscyr.sty}
+{
+  \usepackage{pscyr}
+  \def\rmdefault{ftm}
+  \def\sfdefault{ftx}
+  \def\ttdefault{fer}
+  \DeclareMathAlphabet{\mathbf}{OT1}{ftm}{bx}{it} % bx/it or bx/m
+}
+
+
+\mathsurround=0.1em
+\clubpenalty=1000%
+\widowpenalty=1000%
+\brokenpenalty=2000%
+\frenchspacing%
+\tolerance=2500%
+\hbadness=1500%
+\vbadness=1500%
+\doublehyphendemerits=50000%
+\finalhyphendemerits=25000%
+\adjdemerits=50000%
+\newcommand {\pp} {\partial}
+\newcommand {\ppr} [4] {\frac{\pp {#1} ^{#2}}{\pp {#3} ^{#4}}}
+\newcommand {\cd} {\cdot}
+\newcommand {\SL} {\implies}
+\newcommand {\HD} {\hdots}
+\newcommand {\FI} {\varphi}
+\newcommand {\eps} {\epsilon}
+\newcommand {\we} {\wedge}
+\newcommand {\st} {\longleftarrow}
+\newcommand {\titt} {\Longleftrightarrow}
+\newcommand {\trr} {\blacktriangleright}
+\newcommand {\trl} {\blacktriangleleft}
+\newcommand {\iii} {\int\limits}
+\newcommand {\ido} {\iint\limits} 
+\newcommand {\AL} {\alpha}
+\newcommand {\AS} {\alpha'}
+\newcommand {\ppp}[2] {\ppr{x}{#1}{x}{#2}}
+\newcommand {\LS} {\sum\limits}
+\newcommand {\bb} {\mathbb}
+\newcommand {\ta} {\theta}
+\newcommand {\TA} {\Theta}
+\newcommand {\pt} {\ppr{}{}{\ta}{}}
+\newcommand {\mm} {\mathcal}
+
+\theoremstyle{plain}
+\newtheorem{predl}{Предложение}
+\newtheorem{lem}{Лемма}
+\newtheorem{teo}{Теорема}
+\newtheorem{opr}{Определение}
+
+
+\begin{document}
+
+\author{сфс}
+\title{лекции по теории случайных процессов 2023}
+\date{\today}
+\maketitle
+\large
+\input{lec1.tex}
+\input{lec2.tex}
+\input{lec3.tex}
+\input{lec4.tex}
+\input{lec5.tex}
+\input{lec6.tex}
+\input{lec7.tex}
+\input{lec8.tex}
+\input{lec9.tex}
+\input{lec10.tex}
+\input{lec11.tex}
+\input{lec12.tex}
+\input{lec13.tex}
+\input{lec14.tex}
+
+
+\end{document}
+
